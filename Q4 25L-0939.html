@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>HTML Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 1;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #d4e8e8;
+            font-family: Times New Roman;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border: 3px solid #a0d0d0;
+        }
+        .header {
+            background-color: #4FF0F0;
+            padding: 20px;
+            text-align: right;
+            margin-bottom: 20px;
+            border: 2px solid teal;
+        }
+            .header h1 {
+                font-family: Times New Roman;
+                font-weight: normal;
+                font-size: 32px;
+                color: #5abebe;
+                margin-bottom: 5px;
+            }
+            .header p {
+                font-family: Times New Roman;
+                font-weight: normal;
+                font-size: 14px;
+                color: teal;
+            }
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+        .sidebar {
+            flex: 0 0 200px;
+        }
+        .friends-box {
+            background-color: #7dd3d3;
+            border: 3px solid #5abebe;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+            .friends-box h2 {
+                font-family: Times New Roman;
+                font-weight: normal;
+                font-size: 20px;
+                color: teal;
+                margin-bottom: 10px;
+            }
+            .friends-box ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            .friends-box li {
+                font-family: Times New Roman;
+                font-size: 12px;
+                color: teal;
+                margin-bottom: 8px;
+            }
+        .main-content {
+            flex: 1;
+        }
+        .entry {
+            background-color: #e0f5f5;
+            border: 2px solid #5abebe;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .entry-text {
+            flex: 1;
+        }
+        .entry-date {
+            font-family: Times New Roman;
+            font-weight: bold;
+            font-size: 14px;
+            color: teal;
+            border-bottom: 2px dashed #5abebe;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        .entry-title {
+            font-family: Times New Roman font-weight: bold;
+            font-size: 16px;
+            color: teal;
+            display: inline;
+        }
+        .entry-content {
+            font-family: Times New Roman;
+            font-size: 12px;
+            color: Maroon;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        .entry-image {
+            flex: 0 0 150px;
+        }
+            .entry-image img {
+                width: 100%;
+                height: auto;
+                border: 2px solid #5abebe;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Victoria's Journal</h1>
+            <p>So fresh and so clean</p>
+        </div>
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <div class="friends-box">
+                    <h2>Friends</h2>
+                    <ul>
+                        <li>John Cena</li>
+                        <li>Cristiano Ronaldo</li>
+                        <li>Goku</li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="main-content">
+                <article class="entry">
+                    <div class="entry-text">
+                        <div class="entry-date">04/09/08: Spatulas</div>
+                        <span class="entry-title">Spatulas</span>
+                        <div class="entry-content">
+                            Yesterday, I went to the store and got some much needed spatulas! (what better way to say I love myself than to buy myself a spatula?)
+                        </div>
+                    </div>
+                    <div class="entry-image">
+                        <img src="https://m.media-amazon.com/images/I/31A3s2a3cuL._SL500_.jpg" alt="Spatula">
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="entry-text">
+                        <div class="entry-date">04/08/08: Cookie Cupcakes</div>
+                        <span class="entry-title">Cookie Cupcakes</span>
+                        <div class="entry-content">
+                            My favorite cartoon character is cookie, and my favorite dessert is cupcakes, so Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said, Sometimes me think what is love, and then me think love is what cookie is for. Me give up the last cookie for you. I wonder if the same applies for the cupcakes? (If so, I don't think I can ever love ANYONE!)
+                        </div>
+                    </div>
+                    <div class="entry-image">
+                        <img src="https://www.ifyougiveablondeakitchen.com/wp-content/uploads/2015/11/cookie-dough-frosting-cupcakes.jpg" alt="Cookie Cupcakes">
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
